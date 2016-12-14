@@ -1,0 +1,1029 @@
+*{
+    padding: 0;
+    margin: 0;
+    font: 14px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+body{
+    background-color: #F5F5F5;
+}
+img{
+    border: none;
+    vertical-align: top;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+i,em{
+    font-style: normal;
+}
+b,strong{
+    font-weight: normal;
+}
+input{
+    outline: none;
+    /*点击的时候自带外边框线去掉*/
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+.clearfix{zoom:1}
+
+.w1104{
+    width: 1104px;
+    min-width: 1104px;
+    /*最小宽度*/
+    margin: 0 auto;
+}
+.topNav{
+    height: 60px;
+    background: -webkit-linear-gradient(top,#fa8723,#f57614);
+}
+.topNavCon h1{
+    float: left;
+}
+.topNavCon h1 a{
+    width: 200px;
+    height: 60px;
+    background: url("images/logo.png") no-repeat;
+    display: block;
+    margin-left: 2px;
+    text-indent: -999999em;
+    /*隐藏优化文字 缩进特别大的负值*/
+}
+.topNavCon h1 a:hover{
+    background-position: 0 -60px;
+}
+
+.topNavCon p{
+    float: left;
+    padding-left: 5px;
+    /*margin-left: 5px;  都可以*/
+}
+.topNavCon p a{
+    float: left;
+    /*用display:inline-block还要把空格去掉*/
+    font-size: 16px;
+    color: #fff;
+    height: 60px;
+    width: 90px;
+    line-height: 60px;
+    text-align: center;
+    /*text-shadow: 0 1px 2px rgba(0,0,0,.5) ;*/
+    /*文字阴影
+    跟box-shadow的样式顺序一样*/
+}
+.topNavCon p .find{
+    background: -webkit-linear-gradient(top,#db6600,#f57614);
+}
+.topNavCon ul{
+    float: left;
+    width: 243px;
+    height: 28px;
+    border: 1px solid #db6b16;
+    /**/
+    border-radius: 2px;
+    background: #fa8c1e;
+    margin: 15px 0 0 20px;
+}
+.topNavCon ul li{
+    float: left;
+    width: 60px;
+    height: 28px;
+    /*浮动就是内容的高度要在重新设置一下*/
+    line-height: 28px;
+    text-align: center;
+    border-right: 1px solid #db6b16;
+
+}
+.topNavCon ul .noBor{
+    border-right: none;
+
+}
+.topNavCon ul li a{
+    color: #fff;
+    /*text-shadow: 0 1px 2px rgba(0,0,0,.5);*/
+}
+.topNavCon ul li:hover{
+    background: #d65c15;
+}
+.topNavCon .search{
+    position: relative;
+    float: left;
+    padding: 15px 0 0 20px;
+}
+.topNavCon .search input{
+    width: 198px;
+    height: 28px;
+    border: 1px solid #db6816;
+    border-radius: 2px;
+    font-size: 12px;
+    padding-left: 30px;
+}
+.topNavCon .search i{
+    position: absolute;
+    top: 23px;
+    left: 29px;
+    width: 15px;
+    height: 15px;
+    background: url("images/header_icon.png") no-repeat -5px -53px;
+}
+.topNavCon .search i:hover{
+    cursor: pointer;
+}
+.topNavCon .btn{
+    float: right;
+    padding: 15px 6px 0 0;
+
+}
+.topNavCon .btn a{
+    float: left;
+    width: 56px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #b25415;
+    border-radius: 2px;
+    background: #cb691c;
+    font-size: 12px;
+    color: #fff;
+    /*text-shadow: 0 1px 2px rgba(0,0,0,.5);*/
+    text-align: center;
+}
+.topNavCon .btn .login{
+    margin-left: 7px;
+    border-radius: 2px 0 0 2px;
+}
+.topNavCon .btn .bRun{
+    width: 28px;
+    height: 28px;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    display: inline-block;
+    background: url("images/web.png") no-repeat -23px 3px;
+    background-color: #ca671b;
+    vertical-align: middle;
+}
+.topNavCon .btn .bBast{
+    width: 28px;
+    height: 28px;
+    border-radius: 0 2px 2px 0;
+    background: url("images/web.png") no-repeat 0 3px;
+    background-color: #ca671b;
+    display: inline-block;
+    vertical-align: middle;
+}
+.topNavCon .btn .reg:hover,.topNavCon .btn .login:hover,.topNavCon .btn .bRun:hover,.topNavCon .btn .bBast:hover{
+    background-color: #c05d11;
+}
+.subNav{
+    border-bottom: 1px solid #ccc;
+    height: 30px;
+    background: #f0f0f0;
+}
+.subNav .subNavCon ul{
+    float: left;
+    padding-left: 102px;
+}
+.subNav .subNavCon ul li{
+    float: left;
+}
+.subNav .subNavCon ul a{
+    font-size: 12px;
+    line-height: 30px;
+    color: #333;
+    padding-right: 33px;
+}
+.subNav .subNavCon ul .first a,.subNav .subNavCon ul a:hover{
+    color: #ff6600;
+}
+.subNav .subNavCon ol{
+    float: right;
+    padding-right: 3px;
+}
+.subNav .subNavCon ol li{
+    float: left;
+    padding-left: 25px;
+    line-height: 30px;
+}
+.subNav .subNavCon ol li i{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: url("images/header_icon.png") no-repeat -77px -53px;
+    vertical-align: -2px;
+    margin-right: 5px;
+}
+.subNav .subNavCon ol li a{
+    font-size: 12px;
+    color: #333;
+}
+.subNav .subNavCon ol li .play{
+    width: 16px;
+    height: 14px;
+    background-position: -28px -53px;
+}
+.subNav .subNavCon ol li .down{
+    background-position: -53px -53px;
+}
+.subNav .subNavCon ol li:hover a{
+    color: #fa7a19;
+}
+.subNav .subNavCon ol li:hover i{
+    background-position: -77px -77px;
+}
+.subNav .subNavCon ol li:hover .play{
+    background-position: -28px -77px;
+}
+.subNav .subNavCon ol li:hover .down{
+    background-position: -53px -77px;
+}
+.container{
+    background: #f5f5f5;
+    padding-top: 19px;
+}
+.conLeft{
+   width: 740px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    padding: 15px;
+}
+.banner{
+    position: relative;
+}
+.banner ul{
+    width: 740px;
+    height: 170px;
+    overflow: hidden;
+}
+.banner ul img{
+    width: 740px;
+    height: 170px;
+}
+.banner ol{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 70px;
+    height: 18px;
+    background: rgba(0,0,0,.1);
+    border-radius: 9px;
+}
+.banner ol li{
+    float: left;
+    padding: 5px 0 0 5px;
+}
+.banner ol li a{
+    width: 8px;
+    height: 8px;
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    /*值兼容ie9以上的版本*/
+
+}
+.banner ol:hover{
+    background: rgba(0,0,0,.3);
+}
+.banner ol .active a,.banner ol li a:hover{
+    background: #ff6600;
+}
+.conLeft h4{
+    padding: 15px 0;
+    font-size: 18px;
+    color: #333;
+}
+.conLeft h4 i{
+
+    color: #ff7d57;
+    font-size: 12px;
+    padding: 0 2px 0 3px;
+}
+.conLeft h4 a{
+    font-size: 12px;
+    color: #f60;
+}
+.conLeft h4 a:hover{
+    text-decoration: underline;
+}
+
+.like .likeL{
+    float: left;
+}
+.like .likeL .likeLTop{
+    position: relative;
+    width: 134px;
+    height: 158px;
+    background: #3a3935;
+    padding: 3px;
+}
+.likeLTop ul li{
+    float: left;
+}
+.likeLTop ul li img{
+    width: 67px;
+    height: 67px;
+}
+.likeLTop i{
+    width: 48px;
+    height: 48px;
+    background: url("images/play_icon.png") no-repeat ;
+    position: absolute;
+    left: 46px;
+    top: 46px;
+}
+.likeLTop i:hover{
+    background-position: -48px 0;
+    cursor: pointer;
+}
+.likeLTop span{
+    font-size: 12px;
+    color: #999;
+    display: block;
+    padding: 7px 0 0 2px;
+}
+.likeL a{
+    font: 18px 'Hiragino Sans GB','Microsoft Yahei';
+    color: #333;
+    display: block;
+    padding-top: 17px;
+    text-align: center;
+
+}
+.likeR{
+    float: left;
+}
+.likeR>li{
+    float: left;
+    width: 140px;
+    margin-left: 10px;
+}
+.likeR>li dl{
+    height:164px;
+}
+.likeR>li dl dt{
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+.likeR>li dl dt:hover .imgHide{
+    display: block;
+    cursor: pointer;
+}
+.likeR>li dl dt img{
+    width: 140px;
+    height: 140px;
+}
+.imgHide{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 140px;
+    height: 140px;
+    background: rgba(0,0,0,.3);
+}
+.heart{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.heart p{
+    width: 30px;
+    height: 14px;
+    background: #fefefe;
+    border: 1px solid #333;
+    border-radius: 2px;
+}
+.heart p i{
+    width: 12px;
+    height: 10px;
+    display: inline-block;
+    background: url("images/icon.png") no-repeat -6px -127px;
+    margin: 2px 0 0 4px;
+    vertical-align: top;
+}
+.heart p b{
+    height: 5px;
+    width: 7px;
+    display: inline-block;
+    vertical-align: top;
+    background: url("images/icon.png") no-repeat -152px -81px;
+    margin: 4px 0 0 4px;
+}
+.heart ol{
+    display: none;
+    width: 85px;
+    height: 75px;
+    background: #fff;
+    border: 1px solid #555;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+}
+.heart:hover ol{
+    display: block;
+}
+.heart ol li{
+    height: 25px;
+    line-height: 25px;
+    padding-left: 10px;
+}
+.heart ol li s{
+    width: 14px;
+    height: 10px;
+    display: inline-block;
+    background: url("images/icon.png") no-repeat -5px -127px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.heart ol li .add{
+    background-position: -29px -126px;
+    height: 12px;
+}
+.heart ol li .share{
+    height: 12px;
+    background-position: -53px -126px;
+}
+.heart ol li a{
+    font-size: 12px;
+    color: #333;
+}
+.heart ol li:hover{
+    background: #f5914e;
+}
+.heart ol li:hover a{
+    color: #fff;
+}
+.heart ol li:hover s{
+    background-position: -5px -151px;
+}
+.heart ol li:hover .add{
+    background-position: -29px -150px;
+}
+.heart ol li:hover .share{
+    background-position: -53px -150px;
+}
+.imgHide>a{
+    width: 24px;
+    height: 24px;
+    background: url("images/play_icon.png") no-repeat 0 -48px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.imgHide>a:hover{
+    background-position: -24px -48px;
+}
+.likeR dl dd{
+    position: relative;
+    width: 140px;
+    height: 24px;
+    background: #f5f5f5;
+    line-height: 24px;
+}
+.likeR dl dd a{
+    font-size: 12px;
+    color: #aaa;
+    padding-left: 5px;
+}
+.likeR dl dd .textHide{
+    display: none;
+    width: 140px;
+    height: 164px;
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.likeR dl dd .textHide p{
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    width: 98px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.likeR dl dd .textHide span{
+    width: 68px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #999;
+    display: block;
+    border-radius: 2px;
+    margin: 15px auto;
+    font-size: 12px;
+    color: #fff;
+}
+.likeR dl dd:hover .textHide{
+    display: block;
+    cursor: pointer;
+}
+.likeR dl dd:hover a{
+    color:#f5f5f5 ;
+}
+.likeR>li>a{
+    color: #333;
+    padding-top: 13px;
+    display: block;
+    width: 140px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.likeR li .name{
+    padding-top: 8px;
+    color: #a599b2;
+    font-size: 12px;
+}
+.likeR>li>a:hover{
+    text-decoration: underline;
+}
+.conLeft .ad{
+    padding-top: 34px;
+}
+.conLeft .ad li{
+    float: left;
+    padding-right: 13px;
+}
+.conLeft .ad .noPad{
+    padding-right: 0;
+}
+.conLeft .ad li img{
+    width: 175px;
+    height: 60px;
+}
+.conLeft .title h4{
+    float: left;
+    padding-top: 36px;
+}
+.conLeft .title ul{
+    float: right;
+    padding: 39px 11px 0 0;
+}
+.conLeft .title ul li{
+    position: relative;
+    float: left;
+    padding-left: 24px;
+}
+.conLeft .title ul li a{
+    font-size: 12px;
+    color: #333;
+}
+.conLeft .title ul li a:hover{
+    border-bottom: 3px solid #3a3935;
+}
+.conLeft .title ul li:before{
+    content: '';
+    width: 1px;
+    height: 11px;
+    background: #eeebee;
+    position: absolute;
+    left: 58px;
+    top: 3px;
+}
+.conLeft .title ul .noBor:before{
+    display: none;
+}
+.new{
+    position: relative;
+}
+.new .likeR .noMar{
+    margin-left: 0;
+}
+.new .likeR dl{
+    height: 140px;
+}
+.new>a{
+    width: 25px;
+    height: 50px;
+    background: url("images/page_icon.png") no-repeat -25px 0;
+    position: absolute;
+    top: 46px;
+    left: -15px;
+}
+.new .newRight{
+    left:730px ;
+    background-position: 0 0;
+}
+.new>a:hover{
+    background-position: -25px -50px;
+}
+.new .newRight:hover{
+    background-position: 0 -50px;
+}
+.conLeft .choice{
+    padding-top: 40px;
+}
+.select .info{
+    position: relative;
+    margin-top: 8px;
+}
+.select .info>img{
+    width: 15px;
+    height: 15px;
+}
+.select .info>a{
+    font-size: 12px;
+    color: #999;
+}
+.select .info>a:hover{
+    text-decoration: underline;
+}
+.select .info>i{
+    width: 12px;
+    height: 10px;
+    display: inline-block;
+    background: url("images/icons.png") no-repeat 0 -53px;
+}
+.select .info:hover .infoHide{
+    display: block;
+}
+.infoHide{
+    display: none;
+    position: absolute;
+    left: -7px;
+    bottom: 25px;
+    z-index: 1;
+    width: 333px;
+    height: 220px;
+    background: rgba(0,0,0,.1);
+    border-radius: 2px;
+    padding: 6px;
+}
+.infoHide .hideCon{
+    width: 331px;
+    height: 218px;
+    border: 1px solid #c6cacc;
+    background: #fff;
+    border-radius: 1px;
+}
+.infoHide>i{
+    width: 14px;
+    height: 13px;
+  background: url("images/name_card_bg.png") no-repeat 0 -250px;
+    position: absolute;
+    left: 47px;
+    bottom: -6px;
+}
+.hideCon .detail{
+    height: 80px;
+    background: #f5f9fa;
+}
+.hideCon .detail>a{
+    float: left;
+    padding: 15px 10px 0 20px;
+}
+.hideCon .detail>a img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #aaa;
+    border-radius: 1px;
+}
+.hideCon .detail div{
+    float: left;
+    padding-top: 19px;
+}
+.hideCon .detail div a{
+    font-size: 12px;
+    color: #333;
+}
+.hideCon .detail div a i{
+    width: 12px;
+    height: 10px;
+    background: url("images/icons.png") no-repeat 0 -53px;
+    display: inline-block;
+}
+.hideCon .detail div p{
+    font-size: 12px;
+    color: #666;
+    padding-top: 6px;
+}
+.hideCon .detail div p s{
+    width: 10px;
+    height: 14px;
+    background: url("images/icon2.png") no-repeat -83px -21px;
+    display: inline-block;
+    vertical-align: -3px;
+    margin-right: 6px;
+}
+.hideCon .num{
+    height: 46px;
+    line-height: 46px;
+    padding-left: 21px;
+}
+.hideCon .num span{
+    font-size: 12px;
+    color: #666;
+    padding-right: 11px;
+}
+.hideCon .num i{
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+    background: #5c7284;
+    border-radius: 2px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    margin-right: 1px;
+    vertical-align: middle;
+}
+.infoHide ul{
+    height: 40px;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.infoHide ul li{
+    float: left;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    border-left: 1px solid #f0f0f0;
+    text-align: center;
+}
+.infoHide ul .first{
+    width: 109px;
+    border-left: none;
+}
+.infoHide ul li a{
+    font-size: 12px;
+    color: #999;
+
+}
+.infoHide ul li a b{
+    font-size: 12px;
+    color: #f60;
+}
+.hideCon ol{
+    padding: 12px 0 0 20px;
+}
+.hideCon ol li{
+    float: left;
+    width: 81px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+.hideCon ol .list1{
+    font-size: 12px;
+    color: #ccc;
+}
+.hideCon ol .list1 i{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url("images/btn_follow_play.png") no-repeat 0 -60px;
+    vertical-align: -5px;
+    margin-right: 4px;
+}
+.hideCon ol li a{
+    font-size: 12px;
+    color: #666;
+}
+.hideCon ol li:hover a{
+    color: #f60;
+}
+.hideCon ol li b{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: url("images/icon2.png") no-repeat -293px -113px;
+    margin-right: 6px;
+}
+.container .conLeft .charts{
+    width: 740px;
+  padding-top: 15px;
+}
+.conLeft .sharts>ul>li{
+    position: relative;
+    width: 740px;
+    height: 28px;
+    line-height: 28px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+.sharts>ul>li .marry div{
+    float: left;
+    width: 400px;
+}
+.sharts>ul>li .marry div b{
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #333333;
+    padding-right: 4px;
+}
+.sharts>ul>li .marry div em{
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #999999;
+    padding-right: 5px;
+}
+.sharts>ul>li .marry div i{
+    float: left;
+    width: 18px;
+    height: 12px;
+    background: url("images/mv.png") no-repeat;
+    margin-top: 8px;
+}
+
+.sharts>ul>li .marry  p{
+    float: left;
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    color: #aaaaaa;
+}
+.sharts>ul>li .marry span{
+    float: right;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #aaaaaa;
+}
+.sharts>ul>li .mHide{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 740px;
+    height: 75px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    background: #f5f5f5;
+    z-index: 1;
+}
+.sharts>ul>li:hover .mHide{
+    display: block;
+}
+.mHide .m1{
+    position: relative;
+    float: left;
+    height: 75px;
+    width: 75px;
+
+}
+.mHide .m1 img{
+width: 55px;
+    height: 54px;
+    border-top: 1px solid #333;
+    margin: 10px;
+}
+.mHide .m1 i{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url("images/play_icon.png") no-repeat 0 -48px;
+    top: 25px;
+    left: 25px;
+}
+.mHide .m1 i:hover{
+    background-position: -24px -48px;
+    cursor: pointer;
+}
+
+.mHide .m2{
+    float: left;
+    width: 88px;
+    height: 75px;
+    padding-top: 8px;
+
+}
+.mHide .m2 a{
+    line-height: 24px;
+    color: #333333;
+}
+.mHide .m2 .m3{
+    color: #999999;
+}
+.mHide .m2 a:hover{
+    text-decoration: underline;
+}
+.mHide .m4{
+    position: relative;
+    float: left;
+    width: 32px;
+    height: 16px;
+    margin-left: 130px;
+    margin-top: 15px;
+}
+
+.mHide .m4 p{
+    width: 30px;
+    height: 14px;
+    background: #fefefe;
+    border: 1px solid #333;
+    border-radius: 2px;
+}
+.mHide .m4 p i{
+    width: 12px;
+    height: 10px;
+    display: inline-block;
+    background: url("images/icon.png") no-repeat -6px -127px;
+    margin: 2px 0 0 4px;
+    vertical-align: top;
+}
+.mHide .m4 p b{
+    height: 5px;
+    width: 7px;
+    display: inline-block;
+    vertical-align: top;
+    background: url("images/icon.png") no-repeat -152px -81px;
+    margin: 4px 0 0 4px;
+}
+.mHide .m4:hover{
+    cursor: pointer;
+}
+
+.mHide .m4 ol{
+    display: none;
+    width: 85px;
+    height: 75px;
+    background: #fff;
+    border: 1px solid #555;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+}
+.mHide .m4:hover ol{
+    display: block;
+}
+.mHide .m4 ol li{
+    height: 25px;
+    line-height: 25px;
+    padding-left: 10px;
+}
+.mHide .m4 ol li s{
+    width: 14px;
+    height: 10px;
+    display: inline-block;
+    background: url("images/icon.png") no-repeat -5px -127px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.mHide .m4 ol li .x1{
+    background-position: -29px -126px;
+    height: 12px;
+}
+.mHide .m4 ol li .x2{
+    height: 12px;
+    background-position: -53px -126px;
+}
+.mHide .m4 ol li a{
+    font-size: 12px;
+    color: #333;
+}
+.mHide .m4 li:hover{
+    background: #f5914e;
+}
+.mHide .m4 li:hover a{
+    color: #fff;
+}
+.mHide .m4 li:hover s{
+    background-position: -5px -151px;
+}
+.mHide .m4 li:hover .x1{
+    background-position: -29px -150px;
+}
+.mHide .m4 li:hover .x2{
+    background-position: -53px -150px;
+}
+.mHide .m5{
+    float: left;
+    width: 118px;
+    height: 47px;
+    padding: 8px 10px 0 48px;
+}
+.mHide .m5 img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.mHide .m5 a{
+    color: #333333;
+}
+.mHide p{
+    float: right;
+    height: 57px;
+    line-height: 57px;
+    color: #aaaaaa;
+}
